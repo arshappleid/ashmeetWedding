@@ -11,6 +11,10 @@ body{
 	display: block;
 	margin: 8px;
 }
+p{
+	display: block;
+	margin: 10px 0px;
+}
 a:link{
 	color: black;
 	text-decoration: underline;
@@ -22,13 +26,12 @@ a:visited{
 	cursor: auto;
 }
 ul{
+	text-align: center;
 	display: block;
-	list-style-type: disc;
-	margin-top: 1em;
-	margin-bottom: 1 em;
-	margin-left: 0;
-	margin-right: 0;
-	padding-left: 40px;
+	list-style-type: none;
+	margin: 1em 0;
+	padding-left: 0px;
+	
 }
 h1 {
 	display: block;
@@ -41,6 +44,7 @@ h1 {
 }
 
 h2 {
+	text-align: center;
 	display: block;
 	font-size: 1.5em;
 	margin-top: 0.83em;
@@ -64,7 +68,9 @@ h3 {
 	display: inline-block;
 }
 
-div{display: block;}
+div{
+	
+}
 
 Title{
 	font-family: 'myFont_1';
@@ -78,6 +84,7 @@ Title{
 	flex-wrap: wrap;
 }
 .eventTitle{
+	color: #FFC300 ;
 	text-align: center;
 	font-size: 30px;
 }
@@ -85,14 +92,19 @@ Title{
 
 /* Style the header */
 .topheader {
-  padding: 0% 1.5%;
+  display: flex;
+  align: center;
+  justify-content: center;	
+  padding-top: 1.5%;
+  margin: auto;
+  border-color: black;
+  border-width: 5px;
   border-radius : 2.5%;/*Rounded corners*/
-  margin: 0px 0px;
   border-style : solid;
   top: 0;
   position: sticky;
-  text-align: center;
   color: #1a1a1a;
+  background-color: white;
 }
 .Collapsible {
   cursor: pointer;
@@ -155,8 +167,11 @@ a{
 
 /*Desktop CSS*/
 @media only screen {
+
 	.eventbox{
+  		border-width: 5px;
 		border-style : solid;
+		border-color: black;
 		border-radius : 2.5%;/*Rounded corners*/
 		margin: 0% 25%;
 	}
@@ -168,7 +183,9 @@ a{
 @media only screen and (max-width: 780px) {
 
 	.eventbox{
-		border-style : solid;
+		border-style: solid;
+  		border-width: 5px;
+		border-color: black;
 		border-radius : 2.5%;/*Rounded corners*/
 		margin: 0px 0px;
 	}
