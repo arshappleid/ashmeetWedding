@@ -9,6 +9,7 @@ import Main5 from './Main_Page/MainPage_5';
 import Header from './Main_Page/Header';
 
 
+
 class Main extends Component {
 	render() {
 		return <div background-color="#c85d6d">

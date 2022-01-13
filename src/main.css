@@ -15,6 +15,24 @@ p{
 	display: block;
 	margin: 10px 0px;
 }
+button{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.16, rgb(207, 207, 207)), color-stop(0.79, rgb(252, 252, 252)));
+	background-image: -moz-linear-gradient(center bottom, rgb(207, 207, 207) 16%, rgb(252, 252, 252) 79%);
+	background-image: linear-gradient(to top, rgb(207, 207, 207) 16%, rgb(252, 252, 252) 79%); 
+	padding: 3px;
+	border: 1px solid #000;
+	color: black;
+	text-decoration: none;
+}
+input[type="text"] {
+	margin: 0px 5px;
+    border:1px solid #5AB0DB;
+}
+
+
 a:link{
 	color: black;
 	text-decoration: underline;
@@ -64,7 +82,7 @@ h3 {
 	font-weight: bold;
 }
 
-.img{
+img{
 	display: inline-block;
 }
 
@@ -88,7 +106,10 @@ Title{
 	text-align: center;
 	font-size: 30px;
 }
-
+.horizontal{
+	display: flex;
+	justify-content: center;
+}
 
 /* Style the header */
 .topheader {

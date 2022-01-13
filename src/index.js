@@ -1,14 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Main from './Components/MainPage';
+import App from './Components/App';
 import './main.css'
-// import App from './App';
-// import reportWebVitals from './reportWebVitals';
-// import Main from './Components/Main';
+import { BrowserRouter as Router} from "react-router-dom";
 
-//const element1 = React.createElement('h1', null, 'Ashmeets Weeding')
-
-
-
-//ReactDOM.render(element1, document.getElementById('root'));
-ReactDOM.render(<Main/>, document.getElementById('root'));
+ReactDOM.render(
+  <Router>
+    <App />
+  </Router>,
+  document.getElementById("root")
+);
