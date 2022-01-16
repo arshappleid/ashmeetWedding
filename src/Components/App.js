@@ -6,6 +6,7 @@ import SpecialThanks from './SpecialThanks';
 import Main from './MainPage';
 import Navbar from './Navbar';
 import ContactMe from './ContactMe';
+import Images from './Images';
 
 
 function App() {
@@ -17,6 +18,8 @@ function App() {
 					<Route exact path="/Main"  element={<Main/>} />
 			  		<Route exact path="/SpecialThanks" element={<SpecialThanks />} />
 			  		<Route exact path="/ContactMe" element={<ContactMe />} />
+			  		<Route exact path="/Images" element={<Images />} />
+			  
 			  
 				</Routes>
 

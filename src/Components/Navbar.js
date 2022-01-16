@@ -11,6 +11,7 @@ class Navbar extends Component {
 						<li><Link to="/Main">Home</Link></li>
 						<li><Link to="/SpecialThanks">Special Thanks</Link></li>
 						<li><Link to="/ContactMe">Contact Me</Link></li>
+						<li><Link to="/Images">Aws Images</Link></li>
 					</div>	
 				</ul>
 				</nav>
