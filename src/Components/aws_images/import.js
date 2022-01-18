@@ -1,26 +1,16 @@
-import renderimg from './renderimg';
-
-const { render } = require("@testing-library/react");
 const { S3 } = require("aws-sdk");
-const s3 = new S3();
+const login_details = require("./awslogin.json")
 
-
-
-
-const opts = {
-  Bucket: "ashi-wedding" /* required */,
-  // ContinuationToken: 'STRING_VALUE',
-  // Delimiter: 'STRING_VALUE',
-  EncodingType: "url"
-  // FetchOwner: true || false,
-  // MaxKeys: 'NUMBER_VALUE',
-  // Prefix: 'STRING_VALUE',
-  // RequestPayer: requester,
-  // StartAfter: 'STRING_VALUE'
+var s3 = new S3(login_details);
+// Prefic ="folderName" for params
+var params = {
+  Bucket: 'ashmeet-wedding',
+  Key: 'img1.jpg'
 };
+var param1 = {
+  Bucket: 'ashmeet-wedding',ContentType: 'image/jpeg'
+}
 
-
-// Will list all the files inside the bucket.
 async function* listAllKeys(opts) {
   opts = { ...opts };
   do {
@@ -30,14 +20,25 @@ async function* listAllKeys(opts) {
   } while (opts.ContinuationToken);
 }
 
+listAllKeys(param1);
 
-export async function displayImgs() {
+async function main() {
   // using for of await loop
-	for await (const data of listAllKeys(opts)) {
-	  console.log(data.Contents);
-	  renderimg(data.url);	
- 	 }
+  let keys = [];
+  for await (const data of listAllKeys(params)) {
+    for (let i = 0; i < data.Contents.length; i++) {
+      keys.push(data.Contents[i].Key);
+    }
+  }
+  console.log(keys);
+  
 }
+main();
 
+try {
+  const url = s3.getSignedUrl('GetObject', params);
 
-
+  console.log("Url : ", url);
+} catch (err) {
+  console.log("Error : ", err);
+}

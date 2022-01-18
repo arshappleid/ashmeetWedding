@@ -4,7 +4,7 @@ import wedding from "../images/wedding.jpg";
 const background_image_1 =
 	"https://images.unsplash.com/photo-1579532649461-b2c6edf65546?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80";
 
-const main2_img = "https://images.unsplash.com/photo-1612619732932-ea0a16a7af82?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+
 
 class Main1 extends Component{
 	render() {
