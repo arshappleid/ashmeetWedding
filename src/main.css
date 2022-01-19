@@ -5,6 +5,7 @@
 /*Base CSS*/  
 html{
 	font-size: 15px;
+	background-color: white;
 }
 .footer{
 	justify-content: center;
