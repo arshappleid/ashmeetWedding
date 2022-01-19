@@ -7,6 +7,7 @@ import Main3 from './Main_Page/MainPage_3';
 import Main4 from './Main_Page/MainPage_4';
 import Main5 from './Main_Page/MainPage_5';
 import Header from './Main_Page/Header';
+import Footer from './Footer';
 
 
 class Main extends Component {
@@ -18,6 +19,7 @@ class Main extends Component {
 			<Main3 /><p></p>
 			<Main5 /><p></p>
 			<Main4 /><p></p>
+			<Footer/><p></p>
 		</div>
 	}
 }

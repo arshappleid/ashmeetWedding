@@ -6,7 +6,11 @@
 html{
 	font-size: 15px;
 }
-
+.footer{
+	justify-content: center;
+	text-align: center;
+	color : #d67a7a;
+}
 body{
 	display: block;
 	margin: 8px;
