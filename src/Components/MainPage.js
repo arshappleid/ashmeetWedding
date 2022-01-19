@@ -9,17 +9,13 @@ import Main5 from './Main_Page/MainPage_5';
 import Header from './Main_Page/Header';
 import Footer from './Footer';
 
+import RenImages from './aws_images/RenImages';
+
 
 class Main extends Component {
 	render() {
 		return <div background-color="#c85d6d">
-			<Header/><p></p>
-			<Main1 /><p></p>
-			<Main2 /><p></p>
-			<Main3 /><p></p>
-			<Main5 /><p></p>
-			<Main4 /><p></p>
-			<Footer/><p></p>
+			<RenImages/>
 		</div>
 	}
 }

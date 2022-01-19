@@ -6,6 +6,13 @@
 html{
 	font-size: 15px;
 }
+.imgbox{
+		border-style: solid;
+  		border-width: 3px;
+		border-color: black;
+		border-radius : 2.5%;/*Rounded corners*/
+		margin: 0px 0px;
+}
 .footer{
 	justify-content: center;
 	text-align: center;
