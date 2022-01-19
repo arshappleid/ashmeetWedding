@@ -17,8 +17,6 @@ class Main extends Component {
 			<Main1 /><p></p>
 			<Main2 /><p></p>
 			<Main3 /><p></p>
-			<Main5 /><p></p>
-			<Main4 /><p></p>
 			<Footer/><p></p>
 		</div>
 	}

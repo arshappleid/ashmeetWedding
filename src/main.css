@@ -21,13 +21,13 @@ p{
 }
 a:link{
 	color: black;
-	text-decoration: underline;
 	cursor: auto;
-	}
+	text-decoration: underline;
+}
 a:visited{
 	color: blue;
-	text-decoration: underline;
 	cursor: auto;
+	text-decoration: underline;
 }
 ul{
 	text-align: center;
@@ -70,6 +70,10 @@ h3 {
 
 .img{
 	display: inline-block;
+}
+.icon{
+	width: 32px;
+	height: 32px;
 }
 
 div{
@@ -168,14 +172,25 @@ a{
 	font-family: myFont_1,papyrus;
 	padding: auto;
 }
-
+.googlebutton{
+	display:flex;
+	margin : 3px;
+}
+.icon{
+	display: inline;
+	max-width: 20px;
+	max-height: 20px;
+	padding: auto;
+	border-radius: 5.5%;
+	right: 5px;
+}
 /*Desktop CSS*/
 @media only screen {
 
 	.eventbox{
   		border-width: 5px;
 		border-style : solid;
-		border-color: black;
+		border-color: gray;
 		border-radius : 2.5%;/*Rounded corners*/
 		margin: 0% 25%;
 	}
