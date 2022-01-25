@@ -1,16 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 /*Base CSS*/  
 html{
 	font-size: 15px;
-	background-color: white;
+	background-color: rgb(252,208,150);
+	font-family: 'Great Vibes', cursive;
 }
 .footer{
 	justify-content: center;
 	text-align: center;
 	color : #d67a7a;
+	font-size: 18px;
 }
 body{
 	display: block;
@@ -26,7 +28,7 @@ a:link{
 	text-decoration: underline;
 }
 a:visited{
-	color: blue;
+	color: black;
 	cursor: auto;
 	text-decoration: underline;
 }
@@ -93,28 +95,39 @@ Title{
 	flex-wrap: wrap;
 }
 .eventTitle{
-	color: #FFC300 ;
+	color: rgb(193,136,15) ;
 	text-align: center;
-	font-size: 30px;
+	font-size: 32px;
+	line-height:1.4;
+	font-weight : 1000;
+	font-family: 'Great Vibes', cursive;
 }
 
 
 /* Style the header */
 .topheader {
+
+  font-weight : 1000;
+  font-family: 'Great Vibes', cursive;
+  font-size : 16px;
+  line-height : 1.1;
+  border-color: #d67a7a;
   display: flex;
   align: center;
   justify-content: center;	
-  padding-top: 1.5%;
+  padding: 4px 4px;
   margin: auto;
-  border-color: black;
-  border-width: 5px;
+  
+
+  border-width: 4px;
   border-radius : 2.5%;/*Rounded corners*/
   border-style : solid;
   top: 0;
   position: sticky;
   color: #1a1a1a;
-  background-color: white;
+  background-color: rgb(252,208,150);
 }
+
 .Collapsible {
   cursor: pointer;
   padding: 5px;
@@ -141,7 +154,7 @@ Title{
 }
 
 a{
-	position: relative;align:center;display: inline;display:wrap;padding: auto; color: #1a1a1a;font-family: myFont_1,papyrus;
+	position: relative;align:center;display: inline;display:wrap;padding: auto; font-color: #1a1a1a;font-weight: 1100;text-decoration-color: black;font-size: 19px;
 }
 
 .background_image_card{
@@ -176,6 +189,8 @@ a{
 .googlebutton{
 	display:flex;
 	margin : 3px;
+	font-size: 25px;
+	font-weight: 1000;
 }
 .icon{
 	display: inline;
@@ -189,9 +204,9 @@ a{
 @media only screen {
 
 	.eventbox{
-  		border-width: 5px;
+  		border-width: 4px;
 		border-style : solid;
-		border-color: gray;
+		border-color: #d67a7a;
 		border-radius : 2.5%;/*Rounded corners*/
 		margin: 0% 25%;
 	}
@@ -204,8 +219,10 @@ a{
 
 	.eventbox{
 		border-style: solid;
-  		border-width: 5px;
-		border-color: black;
+  		border-width: 3px;
+		font-size: 19px;
+		font-weight: bold;  
+		border-color: #d67a7a;
 		border-radius : 2.5%;/*Rounded corners*/
 		margin: 0px 0px;
 	}

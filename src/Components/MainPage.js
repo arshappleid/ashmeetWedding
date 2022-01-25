@@ -12,11 +12,11 @@ import Footer from './Footer';
 
 class Main extends Component {
 	render() {
-		return <div >
-			<Header/><p></p>
-			<Main1 /><p></p>
+		return <div styles = {"background:rgb(231,180,32)"}>
+			<Header /><p></p>
 			<Main2 /><p></p>
 			<Main3 /><p></p>
+			<Main1 /><p></p>			
 			<Footer/><p></p>
 		</div>
 	}
