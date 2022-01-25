@@ -22,7 +22,7 @@ class Main1 extends Component{
 				<h3>
 					<ul>
 						<li>Monday February 14, 2022 </li>
-						<li>Anand Kaaraj : 10 am </li>
+						<li>11 am Onwards.</li>
 						<li className="flex justify-center">Venue : <a href={add}><button class="googlebutton">
 							<img src={mapico} alt = "Map" className = "icon"/>
 							<span class="text-lg mx-4x">{name}</span>
