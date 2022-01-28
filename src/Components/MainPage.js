@@ -8,6 +8,7 @@ import Main4 from './Main_Page/MainPage_4';
 import Main5 from './Main_Page/MainPage_5';
 import Header from './Main_Page/Header';
 import Footer from './Footer';
+import Countdown from './Main_Page/Countdown';
 
 
 class Main extends Component {
