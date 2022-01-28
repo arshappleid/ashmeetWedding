@@ -7,7 +7,6 @@ class Header extends Component {
 			<div className="topheader" id="topHeader">
 				<div>
 					<h2>Ashmeet Gill weds Parampal Sandhu</h2>
-					<Countdown />
 				</div>
 			</div>
 		)

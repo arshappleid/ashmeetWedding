@@ -15,7 +15,6 @@ class Main extends Component {
 	render() {
 		return <div styles = {"background:rgb(231,180,32)"}>
 			<Header /><p></p>
-			<Countdown/>
 			<Main2 /><p></p>
 			<Main3 /><p></p>
 			<Main1 /><p></p>			
