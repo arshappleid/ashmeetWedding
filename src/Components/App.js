@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Route, Routes } from "react-router-dom";
 
 // import all the pages Here
-import SpecialThanks from './SpecialThanks';
+
 import Main from './MainPage';
 import Navbar from './Navbar';
 import RequestImages from './RequestImages';

@@ -14,12 +14,13 @@ import Navbar from './Navbar';
 class Main extends Component {
 	render() {
 		return <div styles={"background:rgb(231,180,32)"}>
-			<Navbar/><p></p>
 			<Header /><p></p>
+			<div className = "cursive">
 			<Main2 /><p></p>
 			<Main3 /><p></p>
 			<Main1 /><p></p>			
-			<Footer/><p></p>
+			<Footer /><p></p>
+			</div>
 		</div>
 	}
 }

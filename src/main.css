@@ -6,13 +6,18 @@
 html{
 	font-size: 15px;
 	background-color: rgb(252,208,150);
-	font-family: 'Great Vibes', cursive;
+
 }
+
+
 .footer{
 	justify-content: center;
 	text-align: center;
 	color : #d67a7a;
 	font-size: 18px;
+}
+.cursive{
+	font-family: 'Great Vibes', cursive;
 }
 .Countdown{
 	display: inline-block;
